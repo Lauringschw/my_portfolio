@@ -5,6 +5,7 @@ class NavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.blue,
       height: 100,
       child: Row(
         children: [
@@ -16,9 +17,15 @@ class NavigationBar extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              _NavBarItem('Episodes'),
+              _NavBarItem('Home'),
               SizedBox(width: 60,),
-              _NavBarItem('Episodes'),
+              _NavBarItem('About'),
+              SizedBox(width: 60,),
+              _NavBarItem('Travel'),
+              SizedBox(width: 60,),
+              _NavBarItem('Instagram'),
+              SizedBox(width: 60,),
+              _NavBarItem('Facebook'),
               SizedBox(width: 60,),
             ],
           ),
