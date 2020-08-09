@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                               bottomLeft: Radius.circular(20),
                               topLeft: Radius.circular(20),
                             ),
-                            color: Colors.green[200],
+                            color: Colors.black12,
                           ),
                           child: SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
@@ -138,7 +138,7 @@ Container scrollContainer() {
     width: 175,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(20),
-      color: Colors.red[200],
+      color: Colors.white70,
     ),
   );
 }
