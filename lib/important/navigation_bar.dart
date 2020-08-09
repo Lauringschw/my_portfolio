@@ -18,18 +18,22 @@ class NavigationBar extends StatelessWidget {
         children: [
           Container(
             margin: EdgeInsets.only(left: 50),
-              child: GestureDetector(
-                onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                  );
-                },
+            child: FlatButton(
+              color: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
                 child: Text(
-            'Laurin Gschwenter',
-            style: TextStyle(color: Colors.black, fontSize: 30),
+              'Laurin Gschwenter',
+              style: TextStyle(color: Colors.black, fontSize: 30),
+            )),
           ),
-              )),
           SizedBox(width: 100,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -136,7 +140,7 @@ class _NavBarItem3 extends StatelessWidget {
       ),
       child: FlatButton(
         hoverColor: Color(0xff3F3F3F),
-        splashColor: Color(0xff3F3F3F),
+        height: 50,
         onPressed: () {
           Navigator.push(
             context,

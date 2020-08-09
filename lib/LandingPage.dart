@@ -23,13 +23,10 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Container(
                       width: MediaQuery.of(context).size.width / 2.5,
-//                    height: MediaQuery.of(context).size.height/1,
-                      child: FittedBox(
-                        fit: BoxFit.fitWidth,
-                        child: Image.network(
-                          'https://uploads-ssl.webflow.com/5d4c1763313d9a8ad85a9d65/5d54466b6e4961bf3108138c_home%20hero%20image.jpg',
-                          fit: BoxFit.fill,
-                        ),
+//                      height: MediaQuery.of(context).size.height/1,
+                      child: Image.network(
+                        'https://uploads-ssl.webflow.com/5d4c1763313d9a8ad85a9d65/5d54466b6e4961bf3108138c_home%20hero%20image.jpg',
+                        fit: BoxFit.fill,
                       ),
                     ),
                     Column(
@@ -39,32 +36,31 @@ class _HomePageState extends State<HomePage> {
                           height: 100,
                         ),
                         Container(
-                            width: MediaQuery.of(context).size.width -
-                                MediaQuery.of(context).size.width / 1.7,
-                            child: FittedBox(
-                                fit: BoxFit.fitWidth,
-                                child: Text(
-                                  'Ich bin Web Designer und\nentwickle Webseiten für\nIhren Erfolg.',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ))),
+                          width: MediaQuery.of(context).size.width -
+                              MediaQuery.of(context).size.width / 2,
+                          child: Text(
+                            'Ich bin Web Designer und\nentwickle Webseiten für\nIhren Erfolg.',
+                            style: TextStyle(
+                              fontSize: 65,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
                         SizedBox(
                           height: 20,
                         ),
                         Container(
                           width: MediaQuery.of(context).size.width -
                               MediaQuery.of(context).size.width / 1.4,
-                          child: FittedBox(
-                              fit: BoxFit.fitWidth,
-                              child: Text(
-                                'Als Freelance Web Designer gestalte ich\nmaßgeschneiderte Webseiten, damit Sie online\nlangfristig erfolgreich sind.\n100% individuell und auf Ihre Bedürfnisse\nzugeschnitten.',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              )),
+                          child: Text(
+                            'Als Freelance Web Designer gestalte ich\nmaßgeschneiderte Webseiten, damit Sie online\nlangfristig erfolgreich sind.\n100% individuell und auf Ihre Bedürfnisse\nzugeschnitten.',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
                         ),
                         SizedBox(
                           height: 20,
